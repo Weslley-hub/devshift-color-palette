@@ -1,13 +1,13 @@
-import logoConcept1 from "@/assets/devshift-logo-concept1.png";
-import logoConcept2 from "@/assets/devshift-logo-concept2.png";
-import logoConcept3 from "@/assets/devshift-logo-concept3.png";
+import logoV2Concept1 from "@/assets/devshift-logo-v2-concept1.png";
+import logoV2Concept2 from "@/assets/devshift-logo-v2-concept2.png";
+import logoV2Concept3 from "@/assets/devshift-logo-v2-concept3.png";
 import { Zap, Globe, Smartphone, Monitor, Link2, Lightbulb } from "lucide-react";
 
 const colors = [
-  { hex: "#0a0a1a", name: "Deep Space", role: "Background" },
-  { hex: "#141432", name: "Midnight", role: "Surfaces" },
-  { hex: "#0ea5e9", name: "Cyan Core", role: "Primary" },
-  { hex: "#38bdf8", name: "Sky Glow", role: "Accent" },
+  { hex: "#0d0d0d", name: "Obsidian", role: "Background" },
+  { hex: "#171717", name: "Carbon", role: "Surfaces" },
+  { hex: "#e63946", name: "Inferno Red", role: "Primary" },
+  { hex: "#ff6b35", name: "Blaze Orange", role: "Accent" },
 ];
 
 const services = [
@@ -20,9 +20,9 @@ const services = [
 ];
 
 const logos = [
-  { src: logoConcept1, label: "Conceito 1 — Seta geométrica" },
-  { src: logoConcept2, label: "Conceito 2 — Brackets + seta" },
-  { src: logoConcept3, label: "Conceito 3 — D com seta" },
+  { src: logoV2Concept1, label: "Conceito 1 — Seta gradiente" },
+  { src: logoV2Concept2, label: "Conceito 2 — Brackets bold" },
+  { src: logoV2Concept3, label: "Conceito 3 — D com seta" },
 ];
 
 const Index = () => {
@@ -31,20 +31,20 @@ const Index = () => {
       {/* Hero */}
       <section className="flex flex-col items-center justify-center py-24 px-6 text-center">
         <span className="text-sm font-medium tracking-widest uppercase text-primary mb-4">
-          Brand Identity
+          Brand Identity — V2 🔥
         </span>
         <h1 className="text-5xl md:text-7xl font-extrabold text-foreground leading-tight">
           Dev<span className="text-primary">Shift</span>
         </h1>
         <p className="mt-4 text-lg text-muted-foreground max-w-xl">
-          Software house focada em transformação digital. Automação, desenvolvimento e consultoria tech.
+          Versão agressiva — Vermelho & Laranja. Energia, velocidade e impacto.
         </p>
       </section>
 
       {/* Color Palette */}
       <section className="max-w-5xl mx-auto px-6 py-16">
         <h2 className="text-3xl font-bold text-foreground mb-2">Paleta de Cores</h2>
-        <p className="text-muted-foreground mb-8">Midnight Tech — Confiança, inovação e profundidade.</p>
+        <p className="text-muted-foreground mb-8">Inferno — Agressividade, energia e presença marcante.</p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {colors.map((c) => (
             <div key={c.hex} className="rounded-xl overflow-hidden border border-border">
@@ -83,8 +83,8 @@ const Index = () => {
 
       {/* Logo Concepts */}
       <section className="max-w-5xl mx-auto px-6 py-16">
-        <h2 className="text-3xl font-bold text-foreground mb-2">Conceitos de Logo</h2>
-        <p className="text-muted-foreground mb-8">Ícone + texto — 3 direções criativas</p>
+        <h2 className="text-3xl font-bold text-foreground mb-2">Conceitos de Logo — V2</h2>
+        <p className="text-muted-foreground mb-8">Ícone + texto — 3 direções em vermelho & laranja</p>
         <div className="grid md:grid-cols-3 gap-6">
           {logos.map((logo, i) => (
             <div key={i} className="rounded-xl border border-border bg-card overflow-hidden group hover:border-primary/50 transition-colors">
