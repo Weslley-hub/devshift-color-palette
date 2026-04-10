@@ -111,6 +111,160 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Regras de Uso de Cores */}
+      <section className="max-w-5xl mx-auto px-6 py-16">
+        <h2 className="text-3xl font-bold text-foreground mb-2">Regras de Uso — Cores & Logo</h2>
+        <p className="text-muted-foreground mb-8">Diretrizes para aplicação correta da marca em diferentes contextos.</p>
+
+        {/* Uso correto */}
+        <div className="mb-12">
+          <h3 className="text-xl font-bold text-foreground mb-6 flex items-center gap-2">
+            <span className="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center text-green-400 text-xs">✓</span>
+            Uso Correto
+          </h3>
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* Fundo escuro */}
+            <div className="rounded-xl border border-border overflow-hidden">
+              <div className="p-8 flex items-center justify-center" style={{ backgroundColor: '#0d0d0d' }}>
+                <div className="flex items-center gap-3">
+                  <img src={logoV2Concept1} alt="Logo fundo escuro" className="w-16 h-16 object-contain" />
+                  <span className="text-2xl font-extrabold text-foreground" style={{ fontFamily: 'var(--font-heading)' }}>
+                    Dev<span className="text-primary">Shift</span>
+                  </span>
+                </div>
+              </div>
+              <div className="p-4 bg-card">
+                <p className="text-sm font-semibold text-foreground">Fundo Escuro (Preferencial)</p>
+                <p className="text-xs text-muted-foreground mt-1">Logo colorido sobre fundos #0d0d0d ou #171717. Uso principal.</p>
+              </div>
+            </div>
+            {/* Fundo branco */}
+            <div className="rounded-xl border border-border overflow-hidden">
+              <div className="p-8 flex items-center justify-center bg-white">
+                <div className="flex items-center gap-3">
+                  <img src={logoV2Concept1} alt="Logo fundo claro" className="w-16 h-16 object-contain" />
+                  <span className="text-2xl font-extrabold" style={{ fontFamily: 'var(--font-heading)', color: '#0d0d0d' }}>
+                    Dev<span style={{ color: '#e63946' }}>Shift</span>
+                  </span>
+                </div>
+              </div>
+              <div className="p-4 bg-card">
+                <p className="text-sm font-semibold text-foreground">Fundo Claro</p>
+                <p className="text-xs text-muted-foreground mt-1">Logo colorido + texto escuro sobre fundos brancos ou claros.</p>
+              </div>
+            </div>
+            {/* Monocromático escuro */}
+            <div className="rounded-xl border border-border overflow-hidden">
+              <div className="p-8 flex items-center justify-center" style={{ backgroundColor: '#e63946' }}>
+                <span className="text-2xl font-extrabold text-white" style={{ fontFamily: 'var(--font-heading)' }}>
+                  DevShift
+                </span>
+              </div>
+              <div className="p-4 bg-card">
+                <p className="text-sm font-semibold text-foreground">Sobre Cor Primária</p>
+                <p className="text-xs text-muted-foreground mt-1">Logo branco sobre fundo Inferno Red. Ideal para CTAs e banners.</p>
+              </div>
+            </div>
+            {/* Gradiente */}
+            <div className="rounded-xl border border-border overflow-hidden">
+              <div className="p-8 flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #e63946, #ff6b35)' }}>
+                <span className="text-2xl font-extrabold text-white" style={{ fontFamily: 'var(--font-heading)' }}>
+                  DevShift
+                </span>
+              </div>
+              <div className="p-4 bg-card">
+                <p className="text-sm font-semibold text-foreground">Gradiente Inferno</p>
+                <p className="text-xs text-muted-foreground mt-1">Logo branco sobre gradiente vermelho→laranja. Uso em peças de destaque.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Uso incorreto */}
+        <div className="mb-12">
+          <h3 className="text-xl font-bold text-foreground mb-6 flex items-center gap-2">
+            <span className="w-6 h-6 rounded-full bg-destructive/20 flex items-center justify-center text-destructive text-xs">✕</span>
+            Uso Incorreto
+          </h3>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="rounded-xl border border-destructive/30 overflow-hidden">
+              <div className="p-8 flex items-center justify-center" style={{ backgroundColor: '#2a5c2a' }}>
+                <span className="text-2xl font-extrabold text-primary" style={{ fontFamily: 'var(--font-heading)' }}>DevShift</span>
+              </div>
+              <div className="p-4 bg-card">
+                <p className="text-sm font-semibold text-destructive">Fundos coloridos conflitantes</p>
+                <p className="text-xs text-muted-foreground mt-1">Nunca use sobre cores que competem com o vermelho/laranja.</p>
+              </div>
+            </div>
+            <div className="rounded-xl border border-destructive/30 overflow-hidden">
+              <div className="p-8 flex items-center justify-center bg-card">
+                <span className="text-2xl font-extrabold text-muted-foreground/30" style={{ fontFamily: 'var(--font-heading)' }}>DevShift</span>
+              </div>
+              <div className="p-4 bg-card">
+                <p className="text-sm font-semibold text-destructive">Baixo contraste</p>
+                <p className="text-xs text-muted-foreground mt-1">Nunca aplique o logo com opacidade reduzida ou cores apagadas.</p>
+              </div>
+            </div>
+            <div className="rounded-xl border border-destructive/30 overflow-hidden">
+              <div className="p-8 flex items-center justify-center bg-card">
+                <span className="text-2xl font-extrabold text-foreground italic" style={{ fontFamily: 'serif' }}>DevShift</span>
+              </div>
+              <div className="p-4 bg-card">
+                <p className="text-sm font-semibold text-destructive">Tipografia alterada</p>
+                <p className="text-xs text-muted-foreground mt-1">Nunca substitua a fonte Syne por outra tipografia.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Regras de cor */}
+        <div>
+          <h3 className="text-xl font-bold text-foreground mb-6">Hierarquia de Cores</h3>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="rounded-xl border border-border bg-card p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-8 h-8 rounded-lg" style={{ backgroundColor: '#e63946' }} />
+                <div>
+                  <p className="text-sm font-semibold text-foreground">Inferno Red — Primária</p>
+                  <p className="text-xs text-primary font-mono">#e63946</p>
+                </div>
+              </div>
+              <p className="text-sm text-muted-foreground">Uso principal: logo, CTAs, botões primários, links ativos. Máximo 30% da composição.</p>
+            </div>
+            <div className="rounded-xl border border-border bg-card p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-8 h-8 rounded-lg" style={{ backgroundColor: '#ff6b35' }} />
+                <div>
+                  <p className="text-sm font-semibold text-foreground">Blaze Orange — Acento</p>
+                  <p className="text-xs text-accent font-mono">#ff6b35</p>
+                </div>
+              </div>
+              <p className="text-sm text-muted-foreground">Uso secundário: ícones, badges, hovers, destaques. Sempre acompanhando o vermelho, nunca sozinho.</p>
+            </div>
+            <div className="rounded-xl border border-border bg-card p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-8 h-8 rounded-lg" style={{ backgroundColor: '#0d0d0d' }} />
+                <div>
+                  <p className="text-sm font-semibold text-foreground">Obsidian — Fundo</p>
+                  <p className="text-xs text-muted-foreground font-mono">#0d0d0d</p>
+                </div>
+              </div>
+              <p className="text-sm text-muted-foreground">Base principal de fundo. Domina 60-70% do layout. Transmite sofisticação.</p>
+            </div>
+            <div className="rounded-xl border border-border bg-card p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-8 h-8 rounded-lg" style={{ backgroundColor: '#171717' }} />
+                <div>
+                  <p className="text-sm font-semibold text-foreground">Carbon — Superfícies</p>
+                  <p className="text-xs text-muted-foreground font-mono">#171717</p>
+                </div>
+              </div>
+              <p className="text-sm text-muted-foreground">Cards, modais e superfícies elevadas. Cria hierarquia visual sobre o fundo Obsidian.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Services Icons */}
       <section className="max-w-5xl mx-auto px-6 py-16 pb-24">
         <h2 className="text-3xl font-bold text-foreground mb-2">Serviços</h2>
